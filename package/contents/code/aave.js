@@ -1,31 +1,23 @@
 var sources = [
     {
-	name: 'Cryptonator',
-	url: 'https://api.cryptonator.com/api/ticker/dot-usd',
-	homepage: 'https://cryptonator.com/',
-	currency: 'USD',
-	getRate: function(data) {
-	    return data.ticker.price;
-	}
-    },
-    {
-	name: 'BW',
-	url: 'https://www.bw.com/exchange/config/controller/website/pricecontroller/getassistprice',
-	homepage: 'https://www.bw.com/',
-	currency: 'USD',
-	getRate: function(data) {
-	    return data.datas.usd.dot;
-	}
-    },
-    {
-	name: 'Bitfinex',
-	url: 'https://api.bitfinex.com/v1/pubticker/dotusd',
-	homepage: 'https://www.bitfinex.com/',
-	currency: 'USD',
-	getRate: function(data) {
-	    return data.ask;
-	}
-    },
+        name: 'Cryptonator',
+        url: 'https://api.cryptonator.com/api/ticker/aave-usd',
+        homepage: 'https://cryptonator.com/',
+        currency: 'USD',
+        getRate: function(data) {
+            return data.ticker.price;
+        }
+        },
+        {
+        name: 'Binance',
+        url: 'https://api.binance.com/api/v3/ticker/price?symbol=AAVEUSDT',
+        homepage: 'https://www.binance.com/',
+        currency: 'USD',
+        getRate: function(data) {
+            return data.price;
+        }
+        },
+    
 ];
 
 var currencyApiUrl = 'http://api.fixer.io';
@@ -50,7 +42,7 @@ function getRate(source, currency, callback) {
     if(source === null) return false;
     
     request(source.url, function(req) {
-	var data = JSON.parse(req.responseText);
+    var data = JSON.parse(req.responseText);    
 	var rate = source.getRate(data);
 	
 	if(source.currency != currency) {

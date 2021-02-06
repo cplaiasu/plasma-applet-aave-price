@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=Polkadot Price
-Comment=Shows current price of Polkadot on the market.
+Name=Aave Price
+Comment=Shows current price of AAVE on the market.
 
-Icon=polkadot
+Icon=aave
 Type=Service
 ServiceTypes=Plasma/Applet
 
@@ -14,7 +14,7 @@ X-KDE-PluginInfo-Category=Utilities
 X-KDE-PluginInfo-Depends=
 X-KDE-PluginInfo-License=GPL-3.0
 X-KDE-PluginInfo-EnabledByDefault=true
-X-KDE-PluginInfo-Name=org.kde.plasma.polkadotprice
+X-KDE-PluginInfo-Name=org.kde.plasma.aaveprice
 
 X-Plasma-API=declarativeappletscript
 X-Plasma-MainScript=ui/main.qml

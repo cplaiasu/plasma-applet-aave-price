@@ -3,7 +3,7 @@ import QtQuick.Controls 1.1
 import QtQuick.Layouts 1.1
 
 import ".."
-import "../../code/polkadot.js" as Polkadot
+import "../../code/aave.js" as Aave
 
 Item {
 	id: configGeneral
@@ -16,8 +16,8 @@ Item {
 	property alias cfg_showText: showText.checked
 	property alias cfg_showDecimals: showDecimals.checked
 	property alias cfg_showBackground: showBackground.checked
-	property variant sourceList: { Polkadot.getAllSources() }
-	property variant currencyList: { Polkadot.getAllCurrencies() }
+	property variant sourceList: { Aave.getAllSources() }
+	property variant currencyList: { Aave.getAllCurrencies() }
 
 	GridLayout {
 		columns: 2

@@ -8,4 +8,4 @@ run:
 
 .PHONY: zip
 zip:
-	zip -r polkadotprice-1.1.plasmoid ./package/
+	zip -r aaveprice-1.0.plasmoid ./package/

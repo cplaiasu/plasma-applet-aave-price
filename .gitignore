@@ -2,4 +2,4 @@ build
 .kdev4
 *.jsc
 *.qmlc
-polkadotprice-*.plasmoid
+aaveprice-*.plasmoid
