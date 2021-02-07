@@ -1,4 +1,4 @@
-# Polkadot Price Plasmoid
+# AAVE Price Plasmoid
 
 ## About
 Plasma applet showing the current price of AAVE from various markets to choose from. 
