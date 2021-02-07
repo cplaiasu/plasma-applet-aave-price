@@ -1,7 +1,7 @@
 # Polkadot Price Plasmoid
 
 ## About
-Plasma applet showing the current price of Polkadot from various markets to choose from. The plasmoid can also convert the price to a desired currency.
+Plasma applet showing the current price of AAVE from various markets to choose from. 
 
 ## Installation
 ```
@@ -18,8 +18,7 @@ make run
 
 ## Supported sources
 - Cryptonator
-- BW
-- Bitfinex
+- Binance
 
 ## Supported currencies
 - USD ($) - US Dollar
